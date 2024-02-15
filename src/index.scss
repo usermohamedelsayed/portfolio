@@ -82,8 +82,8 @@ input {
 
 .container {
   margin: auto;
-  margin-top: 15vh;
   height: 80vh;
+  margin-top: calc(12vh + 15px);
   width: min(calc(99% - 30px), 1024px);
   padding: 10px;
   overflow-y: auto;
