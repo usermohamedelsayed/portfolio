@@ -29,7 +29,7 @@ const Nav = () => {
     }, [pathname])
     return (
         <div className='Nav'>
-            <div className="container">
+            <div className="containerNav">
                 <ul className="flex-align">
                     <h3 className="title">
                         <NavLink to="/">

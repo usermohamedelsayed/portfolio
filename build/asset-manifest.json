@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.628d17f4.css",
-    "main.js": "/static/js/main.189afa42.js",
+    "main.css": "/static/css/main.86539a8c.css",
+    "main.js": "/static/js/main.88037a32.js",
     "static/media/shopping03.png": "/static/media/shopping03.d9943e4678c730042f3b.png",
     "static/media/shopping07.png": "/static/media/shopping07.f5aac47eecfdce283f64.png",
     "static/media/Mohamed_Elsayed.jpg": "/static/media/Mohamed_Elsayed.a9af27f613c6295b5a4b.jpg",
@@ -48,12 +48,13 @@
     "static/media/dashboard09.png": "/static/media/dashboard09.3852c668a5af5e05c2a0.png",
     "static/media/dashboard06.png": "/static/media/dashboard06.a35ea40b000bcd5800b7.png",
     "static/media/Ecommerce11.png": "/static/media/Ecommerce11.1d04a721f5ad9a102edb.png",
+    "static/media/imgError.jpg": "/static/media/imgError.0e13271ab445fb997180.jpg",
     "index.html": "/index.html",
-    "main.628d17f4.css.map": "/static/css/main.628d17f4.css.map",
-    "main.189afa42.js.map": "/static/js/main.189afa42.js.map"
+    "main.86539a8c.css.map": "/static/css/main.86539a8c.css.map",
+    "main.88037a32.js.map": "/static/js/main.88037a32.js.map"
   },
   "entrypoints": [
-    "static/css/main.628d17f4.css",
-    "static/js/main.189afa42.js"
+    "static/css/main.86539a8c.css",
+    "static/js/main.88037a32.js"
   ]
 }

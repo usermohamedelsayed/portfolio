@@ -7,19 +7,12 @@ $widthMediaPhone: 700px;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--cr-border);
     box-shadow: 0 3px 10px var(--cr-shadow);
-    height: 12vh;
     display: flex;
     align-items: center;
     z-index: 100;
 
-    .container {
-        background: none !important;
-        backdrop-filter: none !important;
-        box-shadow: none !important;
-        border: 0 !important;
-        border-radius: 0 !important;
-        margin-top: 0;
-        height: 100% !important;
+    .containerNav {
+        padding: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -46,8 +39,8 @@ $widthMediaPhone: 700px;
         gap: 8px;
 
         @media screen and (max-width: $widthMediaPhone) {
-            padding: 6px;
-            gap: 6px;
+            padding: 8px;
+            gap: 8px;
             justify-content: center;
         }
 
@@ -62,6 +55,10 @@ $widthMediaPhone: 700px;
 
                 @media screen and (max-width: 380px) {
                     font-size: 16px;
+                }
+
+                @media screen and (max-width: 350px) {
+                    padding-left: 4px;
                 }
 
                 @media screen and (max-width: 333px) {

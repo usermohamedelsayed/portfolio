@@ -60,7 +60,7 @@ const About = () => {
                     <Player src={animatAbout} loop autoplay />
                 </div>
                 <div className="info">
-                    <h1>about me</h1>
+                    <h1 className="motionTitle">about me</h1>
                     <span className="desc">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo distinctio incidunt quas fuga totam repudiandae blanditiis dicta eligendi, accusantium nisi, nihil repellendus voluptatibus neque pariatur accusamus, ullam molestias autem cupiditate!
                     </span>

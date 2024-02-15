@@ -4,13 +4,28 @@
     }
 
     .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        @media screen and (max-width: 767px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .container2 {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1.1fr 1fr;
         background-color: var(--bg-primary-soft);
         border-radius: 4px;
         padding: 0 30px;
         box-shadow: 3px 3px 10px var(--cr-shadow-soft);
         overflow: visible;
+        border: 1px solid var(--cr-border);
 
         @media screen and (max-width: 767px) {
             grid-template-columns: 1fr;

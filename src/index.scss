@@ -42,7 +42,6 @@ body {
   background: linear-gradient(-45deg, var(--bg-primary-soft), var(--bg-primary));
   color: var(--cr-text);
   width: 100%;
-  height: auto;
   overflow-x: hidden;
 
   &.dark {
@@ -62,6 +61,31 @@ body {
   }
 }
 
+.wrapper {
+  width: 100vw;
+  padding: 0 20px;
+}
+
+.containerNav,
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 25px 10px;
+  background-color: var(--bg-wrapper);
+  backdrop-filter: blur(10px);
+  margin: auto;
+}
+
+.container {
+  min-height: 100%;
+  min-height: 100vh;
+  padding-top: 95px;
+  border: 1px solid var(--cr-border);
+  box-shadow: 3px 3px 10px var(--cr-shadow-soft);
+  overflow: hidden;
+  border-bottom: 0;
+}
+
 a {
   color: var(--cr-text);
 
@@ -75,26 +99,6 @@ input {
   color: var(--cr-text);
 }
 
-.wrapper {
-  width: 100vw;
-  height: 100vh;
-}
-
-.container {
-  margin: auto;
-  height: 80vh;
-  margin-top: calc(12vh + 15px);
-  width: min(calc(99% - 30px), 1024px);
-  padding: 10px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: var(--bg-wrapper);
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid var(--cr-border);
-  box-shadow: 3px 3px 10px var(--cr-shadow-soft);
-}
-
 .showComponent {
   opacity: 0;
   animation: showComponent 1.4s ease 1 forwards;
@@ -106,39 +110,42 @@ input {
   }
 }
 
+.circleBig,
+.circleMiddle,
+.circleSmall,
+.circleMoiving1,
+.circleMoiving2 {
+  position: fixed;
+  pointer-events: none;
+  filter: blur(10px);
+  border-radius: 50%;
+}
+
 .circleBig {
   width: 200px;
   height: 200px;
-  right: 100px;
+  right: 70px;
   bottom: -50px;
-  background-color: var(--bg-primary);
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(10px);
+  background-color: #2196F3;
 }
 
 .circleMiddle {
   width: 180px;
   height: 180px;
   background-color: cadetblue;
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(10px);
   left: 50%;
   top: 100px;
+
+  @media screen and (max-width: 767px) {
+    left: 70%;
+  }
 }
 
 .circleSmall {
   width: 150px;
   height: 150px;
   background-color: coral;
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(14px);
-  left: 100px;
+  left: 60px;
   bottom: 90px;
 
   @media screen and (max-width: 767px) {
@@ -151,10 +158,6 @@ input {
 .circleMoiving2 {
   width: 100px;
   height: 100px;
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(14px);
   top: -100px;
   z-index: -1;
 }
@@ -199,7 +202,7 @@ input {
 }
 
 .btn {
-  padding: 7px 15px;
+  padding: 11px 20px;
   background-color: var(--cr-primary);
   color: #fff;
   font-size: 13px;
@@ -227,5 +230,19 @@ input {
 
   &:active {
     scale: .9;
+  }
+}
+
+.motionTitle {
+  animation: motionTitle 1s ease 1 forwards;
+  letter-spacing: 20px;
+  opacity: 0;
+  white-space: nowrap;
+
+  @keyframes motionTitle {
+    100% {
+      opacity: 1;
+      letter-spacing: 0;
+    }
   }
 }

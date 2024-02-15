@@ -54,28 +54,10 @@ import imgAmazon05 from "./assest/img-amazon/amazon05.png";
 
 const dataProjects = [
   {
-    id: 1,
-    link: "https://dashboard-57bo7gol4-usermohamedelsayeds-projects.vercel.app",
-    name: "dashboard",
-    desc: "my simple project dashboard is ( 10 ) pages using the scss & react & redux toolkit & recharts",
-    images: [
-      imgDashboard01,
-      imgDashboard02,
-      imgDashboard03,
-      imgDashboard04,
-      imgDashboard05,
-      imgDashboard06,
-      imgDashboard07,
-      imgDashboard08,
-      imgDashboard09,
-      imgDashboard010,
-    ],
-  },
-  {
     id: 2,
     link: "https://amazon-clone-ersueayty-usermohamedelsayeds-projects.vercel.app",
     name: "amazon clone",
-    desc: "my simple project amazon-clone app is ( 5 ) pages using the scss & react & redux toolkit & api & axios",
+    desc: "my simple project amazon-clone is ( 5 ) pages using the scss & react & redux toolkit & api..",
     images: [imgAmazon01, imgAmazon02, imgAmazon03, imgAmazon04, imgAmazon05],
   },
   // {
@@ -94,7 +76,7 @@ const dataProjects = [
     id: 4,
     link: "https://shopping-1w7xqju3f-usermohamedelsayeds-projects.vercel.app",
     name: "shopping app",
-    desc: "my simple project shopping app is ( 10 ) pages using the scss & react & redux toolkit",
+    desc: "my simple project shopping is ( 10 ) pages using the scss & react & redux toolkit..",
     images: [
       imgShopping01,
       imgShopping02,
@@ -114,10 +96,28 @@ const dataProjects = [
     ],
   },
   {
+    id: 1,
+    link: "https://dashboard-57bo7gol4-usermohamedelsayeds-projects.vercel.app",
+    name: "dashboard",
+    desc: "my simple project dashboard is ( 10 ) pages using the scss & react & redux toolkit..",
+    images: [
+      imgDashboard01,
+      imgDashboard02,
+      imgDashboard03,
+      imgDashboard04,
+      imgDashboard05,
+      imgDashboard06,
+      imgDashboard07,
+      imgDashboard08,
+      imgDashboard09,
+      imgDashboard010,
+    ],
+  },
+  {
     id: 5,
-    link: "https://ecommerce-avl3b4eqp-usermohamedelsayeds-projects.vercel.app",
+    link: "https://ecommerce-1dkogmw94-usermohamedelsayeds-projects.vercel.app",
     name: "Ecommerce",
-    desc: "my simple project Ecommerce app is ( 11 ) pages using the scss & react & redux toolkit & api & axios",
+    desc: "my simple project Ecommerce is ( 11 ) pages using the scss & react & redux toolkit & api..",
     images: [
       imgEcommerce01,
       imgEcommerce04,

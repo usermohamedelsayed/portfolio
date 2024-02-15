@@ -6,6 +6,7 @@ import { dataProjects } from "../../data"
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination } from "swiper/modules"
 import { useRef, useState } from "react";
+import imgError from "../../assest/imgError.jpg"
 import "./Projects.scss"
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,6 +36,9 @@ const Popup = ({
             id === "prev" ? prev.click() : next.click()
         }
     }
+    const handleErrorImg = (e) => {
+        e.target.src = imgError
+    }
     return (
         <div ref={refPopup} className={`popupDetalisProject ${togglePopup ? "active" : ""}`}>
             {datePopup ? (<div className="details">
@@ -50,7 +54,7 @@ const Popup = ({
                     className="mySwiper"
                 >
                     {datePopup.images.map(scr => (
-                        <SwiperSlide key={Math.random()}><img src={scr} alt={`project_Images`} /></SwiperSlide>
+                        <SwiperSlide key={Math.random()}><img onError={handleErrorImg} src={scr} alt={`project_Images`} /></SwiperSlide>
                     ))}
                 </Swiper>
                 <div className="btns">
@@ -63,10 +67,8 @@ const Popup = ({
 }
 
 const Projects = () => {
-
     const [datePopup, setDatePopup] = useState(null)
     const [togglePopup, setTogglePopup] = useState(false)
-
     const getDataPopup = (project) => {
         setDatePopup(project)
         setTogglePopup(!togglePopup)
@@ -82,6 +84,9 @@ const Projects = () => {
             e.target.querySelector("small")?.classList.remove("active")
         }, 2200)
     }
+    const handleErrorImg = (e) => {
+        e.target.src = imgError
+    }
     return (
         <>
             <Popup
@@ -91,7 +96,7 @@ const Projects = () => {
             />
             <div className='Projects showComponent'>
                 <div className="container">
-                    <h1>recent work</h1>
+                    <h1 className="motionTitle">recent work</h1>
                     <ul className="list">
                         {dataProjects && dataProjects.map(project => (
                             <div key={project.id} className="item">
@@ -104,6 +109,7 @@ const Projects = () => {
                                     />))
                                     } */}
                                     <img
+                                        onError={handleErrorImg}
                                         onClick={() => getDataPopup(project)}
                                         className="active"
                                         src={project.images[0]}
