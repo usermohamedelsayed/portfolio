@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-primary: #ad7dff;
+  --bg-primary-soft: #fff;
+  --bg-sub-primary: #d6ceda;
+  --bg-wrapper: #ffffff6b;
+  --bg-popup: #000000c0;
+  --bg-inp: #f1f1f1;
+  --bg-effect: #494949;
+  --bg-hover: #4d2199;
+  --cr-primary: #673AB7;
+  --cr-text: #333;
+  --cr-text-muted: #666;
+  --cr-border: #a3a3a3cc;
+  --cr-shadow: #8860d1;
+  --cr-shadow-soft: #b78fff;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--cr-primary);
+}
+
+body {
+  background: linear-gradient(-45deg, var(--bg-primary-soft), var(--bg-primary));
+  color: var(--cr-text);
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  &.dark {
+    --bg-primary: #2e1854;
+    --bg-primary-soft: #282828;
+    --bg-sub-primary: #d6ceda;
+    --bg-wrapper: #282828cc;
+    --bg-popup: #333333a9;
+    --bg-inp: #333333;
+    --bg-popup: #000000d4;
+    --bg-effect: #fff;
+    --cr-text: #fff;
+    --cr-text-muted: #cbc8c8;
+    --cr-border: #474747;
+    --cr-shadow: #0e0e0e;
+    --cr-shadow-soft: #080808;
+  }
+}
+
+a {
+  color: var(--cr-text);
+
+  &:visited {
+    color: var(--cr-text);
+  }
+}
+
+textarea,
+input {
+  color: var(--cr-text);
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  height: 80vh;
+  margin: calc((75px / 2) + 10vh) auto 0;
+  width: min(calc(99% - 30px), 1024px);
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: var(--bg-wrapper);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid var(--cr-border);
+  box-shadow: 3px 3px 10px var(--cr-shadow-soft);
+
+  @media screen and (max-width: 550px) {
+    height: 84vh;
+    width: min(100% - 30px, 1024px);
+    margin: calc(37.5px + 8vh) auto 0;
+  }
+}
+
+.showComponent {
+  opacity: 0;
+  animation: showComponent 1.4s ease 1 forwards;
+}
+
+@keyframes showComponent {
+  100% {
+    opacity: 1;
+  }
+}
+
+.circleBig {
+  width: 200px;
+  height: 200px;
+  right: 100px;
+  bottom: -50px;
+  background-color: var(--bg-primary);
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(10px);
+}
+
+.circleMiddle {
+  width: 180px;
+  height: 180px;
+  background-color: cadetblue;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(10px);
+  left: 50%;
+  top: 100px;
+}
+
+.circleSmall {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(14px);
+  left: 100px;
+  bottom: 90px;
+
+  @media screen and (max-width: 767px) {
+    bottom: 200px;
+    left: -80px;
+  }
+}
+
+.circleMoiving1,
+.circleMoiving2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(14px);
+  top: -100px;
+  z-index: -1;
+}
+
+.circleMoiving1 {
+  left: 30%;
+  background-color: crimson;
+  animation: movingCircle 30s linear infinite backwards;
+
+  @media screen and (max-width: 767px) {
+    left: 23%;
+  }
+}
+
+.circleMoiving2 {
+  right: 20%;
+  background-color: indianred;
+  animation: movingCircle 30s 10s linear infinite backwards;
+}
+
+@keyframes movingCircle {
+  100% {
+    top: 100%;
+  }
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 7px 15px;
+  background-color: var(--cr-primary);
+  color: #fff;
+  font-size: 13px;
+  border-radius: 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: .2s ease box-shadow;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: fit-content;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: var(--bg-hover);
+  }
+
+  &.active {
+    box-shadow: 0 0 0 1.5px #fff, 0 0 0 3px var(--cr-primary);
+  }
+
+  &:active {
+    scale: .9;
+  }
+}

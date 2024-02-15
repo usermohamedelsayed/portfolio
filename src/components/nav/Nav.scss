@@ -1,0 +1,155 @@
+$widthMediaPhone: 700px;
+
+.Nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--cr-border);
+    box-shadow: 0 3px 10px var(--cr-shadow);
+    height: 75px;
+    display: flex;
+    align-items: center;
+
+    .container {
+        background: none !important;
+        backdrop-filter: none !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        margin-top: 0;
+        height: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        overflow: hidden;
+
+        @media screen and (max-width : 550px) {
+            gap: 10px;
+            width: 100% !important;
+            margin: 0;
+        }
+    }
+
+    ul,
+    .darkMood {
+        border-radius: 40px;
+        background-color: var(--bg-primary-soft);
+        border: 1px solid var(--cr-border);
+        box-shadow: 3px 4px 10px var(--cr-shadow);
+    }
+
+    ul {
+        padding: 10px;
+        gap: 8px;
+
+        @media screen and (max-width: $widthMediaPhone) {
+            padding: 6px;
+            gap: 6px;
+            justify-content: center;
+        }
+
+        .title {
+            a {
+                display: flex;
+                align-items: center;
+                color: var(--cr-text);
+                padding-left: 8px;
+                cursor: pointer;
+                user-select: none;
+
+                @media screen and (max-width: 380px) {
+                    font-size: 16px;
+                }
+
+                @media screen and (max-width: 333px) {
+                    display: none;
+                }
+
+                span {
+                    display: block;
+                    color: var(--cr-primary);
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+        a {
+            display: block;
+            color: #fff;
+
+            @media screen and (max-width: $widthMediaPhone) {
+                padding: 0;
+            }
+
+            li {
+                i {
+                    display: none;
+                }
+
+                @media screen and (max-width: $widthMediaPhone) {
+                    width: 35px;
+                    height: 35px;
+
+                    i {
+                        display: grid;
+                        position: absolute;
+                        inset: 0;
+                        place-content: center;
+                        font-size: 17px;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .darkMood {
+        position: relative;
+        flex-shrink: 0;
+        overflow: hidden;
+        width: 50px;
+        height: 50px;
+        background-color: var(--bg-primary-soft);
+        transition: .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            i {
+                color: var(--cr-primary);
+            }
+        }
+
+        i {
+            position: absolute;
+            height: 100%;
+            inset: 0;
+            transition: .2s ease;
+            font-size: 20px;
+            pointer-events: none;
+            color: var(--cr-text);
+
+            &.moon {
+                scale: 0;
+            }
+
+            &.sun {
+                scale: 1;
+            }
+        }
+
+        &.dark {
+            .moon {
+                scale: 1;
+            }
+
+            .sun {
+                scale: 0;
+            }
+        }
+    }
+}
