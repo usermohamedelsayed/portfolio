@@ -161,7 +161,7 @@
                                     border-bottom-color: transparent;
                                 }
 
-                                @keyframes loadding {
+                                @keyframes loaddingCopy {
                                     100% {
                                         transform: translate(-50%, -50%) rotate(360deg);
                                     }
@@ -189,7 +189,7 @@
                             &.active {
                                 span {
                                     &::before {
-                                        animation: loadding 1s linear infinite backwards;
+                                        animation: loaddingCopy 1s linear infinite backwards;
                                     }
 
                                     display: flex;
