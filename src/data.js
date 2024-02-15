@@ -55,7 +55,7 @@ import imgAmazon05 from "./assest/img-amazon/amazon05.png";
 const dataProjects = [
   {
     id: 2,
-    link: "https://amazon-clone-ersueayty-usermohamedelsayeds-projects.vercel.app",
+    link: "https://amazon-clone-smoky-omega.vercel.app/",
     name: "amazon clone",
     desc: "my simple project amazon-clone is ( 5 ) pages using the scss & react & redux toolkit & api..",
     images: [imgAmazon01, imgAmazon02, imgAmazon03, imgAmazon04, imgAmazon05],
@@ -74,7 +74,7 @@ const dataProjects = [
   // },
   {
     id: 4,
-    link: "https://shopping-1w7xqju3f-usermohamedelsayeds-projects.vercel.app",
+    link: "https://shopping-app-blond-mu.vercel.app/",
     name: "shopping app",
     desc: "my simple project shopping is ( 10 ) pages using the scss & react & redux toolkit..",
     images: [
@@ -97,7 +97,7 @@ const dataProjects = [
   },
   {
     id: 1,
-    link: "https://dashboard-57bo7gol4-usermohamedelsayeds-projects.vercel.app",
+    link: "https://dashboard-app-kappa-ten.vercel.app/",
     name: "dashboard",
     desc: "my simple project dashboard is ( 10 ) pages using the scss & react & redux toolkit..",
     images: [
@@ -115,7 +115,7 @@ const dataProjects = [
   },
   {
     id: 5,
-    link: "https://ecommerce-1dkogmw94-usermohamedelsayeds-projects.vercel.app",
+    link: "https://ecommerce-app-delta-navy.vercel.app/",
     name: "Ecommerce",
     desc: "my simple project Ecommerce is ( 11 ) pages using the scss & react & redux toolkit & api..",
     images: [

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.86539a8c.css",
-    "main.js": "/static/js/main.88037a32.js",
+    "main.js": "/static/js/main.9dd3b983.js",
     "static/media/shopping03.png": "/static/media/shopping03.d9943e4678c730042f3b.png",
     "static/media/shopping07.png": "/static/media/shopping07.f5aac47eecfdce283f64.png",
     "static/media/Mohamed_Elsayed.jpg": "/static/media/Mohamed_Elsayed.a9af27f613c6295b5a4b.jpg",
@@ -51,10 +51,10 @@
     "static/media/imgError.jpg": "/static/media/imgError.0e13271ab445fb997180.jpg",
     "index.html": "/index.html",
     "main.86539a8c.css.map": "/static/css/main.86539a8c.css.map",
-    "main.88037a32.js.map": "/static/js/main.88037a32.js.map"
+    "main.9dd3b983.js.map": "/static/js/main.9dd3b983.js.map"
   },
   "entrypoints": [
     "static/css/main.86539a8c.css",
-    "static/js/main.88037a32.js"
+    "static/js/main.9dd3b983.js"
   ]
 }
