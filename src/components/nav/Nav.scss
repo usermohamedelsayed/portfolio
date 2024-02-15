@@ -10,6 +10,7 @@ $widthMediaPhone: 700px;
     height: 75px;
     display: flex;
     align-items: center;
+    z-index: 100;
 
     .container {
         background: none !important;

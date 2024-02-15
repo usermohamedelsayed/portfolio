@@ -93,11 +93,6 @@ input {
   border: 1px solid var(--cr-border);
   box-shadow: 3px 3px 10px var(--cr-shadow-soft);
 
-  @media screen and (max-width: 550px) {
-    height: 84vh;
-    width: min(100% - 30px, 1024px);
-    margin: calc(37.5px + 8vh) auto 0;
-  }
 }
 
 .showComponent {
