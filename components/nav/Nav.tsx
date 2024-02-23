@@ -11,6 +11,10 @@ const Nav = () => {
   const path = usePathname();
   useEffect(() => {
     setIsactive(path);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }, [path]);
   return (
     <nav className="Nav">
