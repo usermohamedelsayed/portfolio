@@ -1,0 +1,23 @@
+.Skils {
+    .container {
+        .mySwiper {
+            max-width: 500px;
+            width: 100%;
+            display: flex;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: 880px) {
+                max-width: 450px;
+            }
+
+            @media screen and (max-width: 610px) {
+                max-width: 80%;
+            }
+
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

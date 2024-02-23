@@ -1,0 +1,91 @@
+.Nav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000;
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 250px;
+            height: 63px;
+            border-radius: 20px 20px 0 0;
+            border: 1px solid var(--cr-border);
+            border-bottom: 0;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--cr-hover);
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 245px;
+                height: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0;
+                border-radius: 20px 20px 0 0;
+                background-color: var(--bg-secondary);
+                z-index: 2;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 500px;
+                height: 550px;
+                background: conic-gradient(transparent, transparent, #fff, transparent);
+                z-index: 1;
+                animation: rotateConic 3s ease infinite forwards;
+
+                @keyframes rotateConic {
+                    100% {
+                        rotate: 360deg;
+                    }
+                }
+            }
+
+            li {
+                position: relative;
+                z-index: 100;
+                transition: .2s ease;
+
+                &:active {
+                    scale: .9;
+                }
+
+                a {
+                    width: 40px;
+                    height: 40px;
+                    display: grid;
+                    place-items: center;
+                    font-size: 23px;
+                    cursor: pointer;
+                    user-select: none;
+                    border-radius: 50%;
+                    transition: .3s ease;
+                    border: 1px solid transparent;
+
+                    &.active,
+                    &:hover {
+                        border: 1px solid var(--cr-border);
+                        background-color: var(--cr-hover);
+                    }
+                }
+            }
+        }
+    }
+}
