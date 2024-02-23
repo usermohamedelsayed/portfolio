@@ -8,7 +8,7 @@ export default function Loading() {
       src={loadingMotion}
       autoplay
       loop
-      style={{ maxWidth: "440px", width: "100%" }}
+      style={{ maxWidth: "540px", marginTop: "20px", width: "100%" }}
     />
   );
 }
