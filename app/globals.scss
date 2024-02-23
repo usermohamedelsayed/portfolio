@@ -46,6 +46,7 @@ a {
   overflow: hidden;
 
   @media screen and (max-width: 767px) {
+    height: calc(100vh - 165px);
     overflow-y: auto;
   }
 
